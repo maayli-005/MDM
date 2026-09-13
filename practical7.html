@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>College FAQ Portal - USN: CM25090</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eef2f7;
+            padding: 40px;
+        }
+
+        .faq-container {
+            max-width: 700px;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #ccc;
+        }
+
+        h1 {
+            text-align: center;
+            color: #222;
+        }
+
+        .usn {
+            text-align: center;
+            color: #555;
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        .faq {
+            margin: 12px 0;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        .question {
+            background-color: #4a69bd;
+            color: white;
+            padding: 15px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .question:hover {
+            background-color: #1e3799;
+        }
+
+        .answer {
+            display: none;
+            padding: 15px;
+            background-color: #f1f2f6;
+            line-height: 1.5;
+        }
+
+        .answer.show {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="faq-container">
+
+        <h1>College Help Portal - FAQs</h1>
+
+        <div class="usn">
+            <strong>USN: CM25090</strong>
+        </div>
+
+        <div class="faq">
+            <div class="question">1. How can I find my classroom?</div>
+            <div class="answer">
+                You can check your classroom and timetable details on the
+                student portal or department notice board.
+            </div>
+        </div>
+
+        <div class="faq">
+            <div class="question">2. What are the college library timings?</div>
+            <div class="answer">
+                The library is generally open during regular college working
+                hours. Check the library notice board for the exact timings.
+            </div>
+        </div>
+
+        <div class="faq">
+            <div class="question">3. How do I join a student club?</div>
+            <div class="answer">
+                Students can join clubs by registering during club orientation
+                or contacting the faculty coordinator of the club.
+            </div>
+        </div>
+
+        <div class="faq">
+            <div class="question">4. Where can I see the academic calendar?</div>
+            <div class="answer">
+                The academic calendar can be viewed on the college website
+                or obtained from the department office.
+            </div>
+        </div>
+
+        <div class="faq">
+            <div class="question">5. How can I request a change in my timetable?</div>
+            <div class="answer">
+                Contact your department coordinator and submit a request
+                explaining the reason for the timetable change.
+            </div>
+        </div>
+
+        <div class="faq">
+            <div class="question">6. How can I get information about internships?</div>
+            <div class="answer">
+                Internship opportunities are usually shared by the placement
+                cell, department faculty, and student portal.
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        const questions = document.querySelectorAll(".question");
+
+        questions.forEach(function(question) {
+            question.addEventListener("click", function() {
+
+                const answer = this.nextElementSibling;
+
+                answer.classList.toggle("show");
+
+            });
+        });
+    </script>
+
+</body>
+</html>
